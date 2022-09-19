@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 
 const generatePage = require('./utils/generateMarkdown.js');
 
-// array of questions for user
+// array of questions for user input
 const questions = () => {
     // using inquirer to prompt questions to user 
     return inquirer.prompt([
