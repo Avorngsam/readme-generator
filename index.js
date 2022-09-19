@@ -1,10 +1,12 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const generatePage = require('./utils/generateMarkdown.js');
 
-//array of questions for user input
-const questions = [
+// array of questions for user
+const questions = () => {
+    // using inquirer to prompt questions to user 
+    return inquirer.prompt([
     {
         type: 'input',
         name: 'title',
@@ -51,7 +53,8 @@ const questions = [
         name: 'email',
         message: 'Enter your email'
     }
-];
+]);
+};
 
 // function to write README file
 const writeFile = data => {
