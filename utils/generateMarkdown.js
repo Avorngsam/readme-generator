@@ -28,7 +28,7 @@ Project license under ${data.license}
 ${data.test}
 
 ## Questions
-If you have any questions contact me at ${data.install}. View more of my projects at https://github.com/${data.github}.
+If you have any questions contact me at ${data.email}. View more of my projects at https://github.com/${data.github}.
 `;
 }
 
